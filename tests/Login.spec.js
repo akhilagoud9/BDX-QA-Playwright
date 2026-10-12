@@ -29,9 +29,6 @@ test('Browser Context Playwright test', async ({browser})=>
     await userName.fill("standard_user");
     await signIn.click();
 
-
-    
-    
     
     //close the browser 
     await browser.close();
