@@ -1,0 +1,15 @@
+Logged in Successfully...
+
+Navigated to Transfer page
+Current URL: https://qaplayground.com/bank/transfer
+Transfer Money 
+ Move funds between your accounts 
+Transfer page displayed successfully...
+[DEBUG] TEST_RUN_ID: 2026-10-14T10-32-28-235Z
+[DEBUG] Log directory: C:\Users\bombo\OneDrive\Desktop\Akhila\BDX\PlaywrightAutomation\test-logs\run-2026-10-14T10-32-28-235Z
+[DEBUG] Log file: C:\Users\bombo\OneDrive\Desktop\Akhila\BDX\PlaywrightAutomation\test-logs\run-2026-10-14T10-32-28-235Z\execution.log
+[2026-10-14T10:33:07.550Z] Navigated to transfer page successfully
+[2026-10-14T10:33:07.819Z] Screenshot saved: transfer-page.png
+[2026-10-14T10:33:07.932Z] PASS: Display operations and navigate to Transfer page
+
+

@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3852","Verify login page","","2026-10-14","passed","2026-10-14","","login.spec.js","",""
+"","6374","Verify with Invalid Credentials","","2026-10-14","passed","2026-10-14","","login.spec.js","",""
+"","7937","Verify with valid credentials","","2026-10-14","passed","2026-10-14","","login.spec.js","",""
+"","7559","Display operations and navigate to Transfer page","","2026-10-14","passed","2026-10-14","","dashboard.spec.js","",""
+"","17994","Transfer Money","","2026-10-14","passed","2026-10-14","","fundTransfer.spec.js","",""

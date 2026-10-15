@@ -1,0 +1,12 @@
+{
+  "username": "standard_user",
+  "password": "bank_sauce",
+  "transfer": {
+    "fromAccount": "Everyday Checking — $4,250.00",
+    "toAccount": "High-Yield Savings — $12,800.00",
+    "amount": "10",
+    "description": "Test transfer",
+    "transferType": "Today",
+    "transferDate": null
+  }
+}

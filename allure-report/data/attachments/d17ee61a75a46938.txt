@@ -1,0 +1,10 @@
+[2026-10-14T10:32:40.016Z] Verifying Invalid Login Test
+Navigated to  QA Playground - Master Automation Testing
+[2026-10-14T10:32:45.663Z] Submitted Invalid credentials
+The username or password you entered is incorrect.
+Please provide valid credentials...
+[2026-10-14T10:32:45.700Z] Verified error message
+[2026-10-14T10:32:45.702Z] Invalid login test completed
+[2026-10-14T10:32:45.830Z] PASS: Verify with Invalid Credentials
+
+

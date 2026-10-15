@@ -1,0 +1,15 @@
+[2026-10-14T10:32:36.358Z] Verifying Login Page Test
+[2026-10-14T10:32:38.885Z] Login page opened
+[2026-10-14T10:32:39.053Z] Verified LoginPage
+[2026-10-14T10:32:39.317Z] PASS: Verify login page
+[2026-10-14T10:32:40.016Z] Verifying Invalid Login Test
+[2026-10-14T10:32:45.663Z] Submitted Invalid credentials
+[2026-10-14T10:32:45.700Z] Verified error message
+[2026-10-14T10:32:45.702Z] Invalid login test completed
+[2026-10-14T10:32:45.830Z] PASS: Verify with Invalid Credentials
+[2026-10-14T10:32:46.435Z] Verifying Valid Login Test
+[2026-10-14T10:32:52.983Z] Submitted valid credentials
+[2026-10-14T10:32:53.356Z] Welcome message verified
+[2026-10-14T10:32:53.700Z] Screenshot saved: login-success.png
+[2026-10-14T10:32:53.704Z] Valid login test completed
+[2026-10-14T10:32:53.819Z] PASS: Verify with valid credentials

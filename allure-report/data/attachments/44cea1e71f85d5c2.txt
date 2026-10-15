@@ -1,0 +1,4 @@
+[2026-10-14T10:32:36.358Z] Verifying Login Page Test
+[2026-10-14T10:32:38.885Z] Login page opened
+[2026-10-14T10:32:39.053Z] Verified LoginPage
+[2026-10-14T10:32:39.317Z] PASS: Verify login page

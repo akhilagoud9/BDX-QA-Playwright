@@ -1,0 +1,11 @@
+[DEBUG] TEST_RUN_ID: 2026-10-14T10-32-28-235Z
+[DEBUG] Log directory: C:\Users\bombo\OneDrive\Desktop\Akhila\BDX\PlaywrightAutomation\test-logs\run-2026-10-14T10-32-28-235Z
+[DEBUG] Log file: C:\Users\bombo\OneDrive\Desktop\Akhila\BDX\PlaywrightAutomation\test-logs\run-2026-10-14T10-32-28-235Z\execution.log
+[2026-10-14T10:32:36.358Z] Verifying Login Page Test
+[2026-10-14T10:32:38.885Z] Login page opened
+QA Playground - Master Automation Testing
+Validated the Login page...
+[2026-10-14T10:32:39.053Z] Verified LoginPage
+[2026-10-14T10:32:39.317Z] PASS: Verify login page
+
+
