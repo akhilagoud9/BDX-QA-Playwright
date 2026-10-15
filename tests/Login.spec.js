@@ -1,76 +1,69 @@
-//import test annotation
+//const {test, expect} = require('@playwright/test');
+const {test} = require('../utils/commonFixtures');
+const user = require('../test-data/user.json');
+const {LoginPage} = require('../pages/LoginPage');
+const {DashboardPage} = require('../pages/DashboardPage');
+const CommonUtils = require('../utils/commonUtils');
 
-const {test, expect} = require('@playwright/test');
+
+// username and password calling from json 
+const uname = user.username;
+const pswd = user.password;
+
+if (!uname || !pswd) {
+    throw new Error("Please provide LOGIN_USERNAME and LOGIN_PASSWORD.");
+}
 
 
-test('Browser Context Playwright test', async ({browser})=>
-{
-    const context = await browser.newContext(); // creates instance of browser
-    const page = await context.newPage();  // it creates actual page to automate; hits URL and automate
-    await page.goto("https://qaplayground.com/bank/login");
-
-    const userName=page.locator('#login-username');
-    const passwd=page.locator('#login-password');
-    const signIn=page.locator("[type='submit']");
+// Test Case 1: Verify the login page
+test('Verify login page', async ({page}) => {
     
-    console.log(await page.title());
-    //await expect(page).toHaveTitle("QA Playground - Master Automation Testing");
+    CommonUtils.CommonUtils.logMessage("Verifying Login Page Test");
+    const loginPage=new LoginPage(page);
+    await loginPage.openLoginPage();
+    CommonUtils.CommonUtils.logMessage('Login page opened');
+    await loginPage.verifyLoginPage();
+    CommonUtils.CommonUtils.logMessage('Verified LoginPage');
+      
+});
 
-    //css, xpath
-    // Login Page
-    await userName.fill("standard_use");
-    await passwd.fill("bank_sauce");
-    await signIn.click();
-
-    console.log(await page.locator("[data-testid='login-error-message']").textContent());
-    await expect(page.locator("[data-testid='login-error-message']")).toContainText('incorrect');
-
-    await userName.fill("");
-    await userName.fill("standard_user");
-    await signIn.click();
-
+// Test case: 2  Verify Invalid login
+test('Verify with Invalid Credentials', async ({page})=> {
     
-    //close the browser 
-    await browser.close();
+    CommonUtils.CommonUtils.logMessage("Verifying Invalid Login Test");
+    
+    const loginPage=new LoginPage(page);
+    await loginPage.openLoginPage();
 
+    console.log("Navigated to ", await page.title());
+
+    await loginPage.login(uname, "bank");
+    CommonUtils.CommonUtils.logMessage('Submitted Invalid credentials');
+    await loginPage.verifyLoginError();
+    CommonUtils.CommonUtils.logMessage('Verified error message');
+    CommonUtils.CommonUtils.logMessage('Invalid login test completed');
+    
 });
 
+// Test case: 3  Verify successful login
+test('Verify with valid credentials', async ({page})=>{
+    
+    CommonUtils.CommonUtils.logMessage("Verifying Valid Login Test");
+    
+    const loginPage = new LoginPage(page);
+    const dashboardPage = new DashboardPage(page);
 
+    await loginPage.openLoginPage();
 
+    console.log("Navigated to ", await page.title());
 
+    await loginPage.login(uname, pswd);
+    CommonUtils.CommonUtils.logMessage('Submitted valid credentials');
 
+    console.log(await dashboardPage.verifyWelcomeMessage());
+    CommonUtils.CommonUtils.logMessage('Welcome message verified');
+    await CommonUtils.CommonUtils.takeScreenshot(page, 'login-success.png');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// another way to automate with few lines of code
-/*
-test('First PlayWright Test', async ({page})=>
-{
-    await page.goto("https://qaplayground.com/bank/dashboard");
+    CommonUtils.CommonUtils.logMessage('Valid login test completed');
 
 });
-*/
-
-// to run only specific by excluding all other tests.
-// another way to automate with few lines of code
-/*test.only('First PlayWright Test', async ({page})=>
-{
-    await page.goto("https://qaplayground.com/bank/login");
-    //await page.goto("https://qaplayground.com/bank/dashboard");
-    console.log(await page.title());
-
-    await expect(page).toHaveTitle("QA Playground - Master Automation Testing");
-});
-*/

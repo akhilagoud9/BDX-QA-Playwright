@@ -1,0 +1,80 @@
+[DEBUG] TEST_RUN_ID: 2026-10-14T10-32-28-235Z
+[DEBUG] Log directory: C:\Users\bombo\OneDrive\Desktop\Akhila\BDX\PlaywrightAutomation\test-logs\run-2026-10-14T10-32-28-235Z
+[DEBUG] Log file: C:\Users\bombo\OneDrive\Desktop\Akhila\BDX\PlaywrightAutomation\test-logs\run-2026-10-14T10-32-28-235Z\execution.log
+[2026-10-14T10:33:14.567Z] Verifying Transfer Money
+
+Navigated to Transfer page
+Current URL: https://qaplayground.com/bank/transfer
+Transfer Money 
+ Move funds between your accounts 
+Transfer page displayed successfully...
+Transfer details submitted for review.
+[2026-10-14T10:33:30.475Z] Screenshot saved: review-transfer.png
+[2026-10-14T10:33:30.478Z] Entered transfer details successfully
+
+===== Transfer Confirmation Details =====
+Skip to content
+SecureBank
+2
+Logout
+
+MAIN
+
+Dashboard
+Accounts
+Transfer
+Send Money
+Bill Pay
+Transactions
+Apply Loan
+
+ACCOUNT
+
+Notifications
+2
+Profile
+Test Cases
+ST
+standard_user
+Transfer Money
+
+Move funds between your accounts
+
+From Account
+acc-checking-1
+To Account
+acc-savings-1
+Amount
+$
+
+Available: $4,250.00
+
+Memo (optional)
+
+Transfer Date
+
+Today
+Schedule for later
+Review Transfer
+Cancel
+Confirm Transfer
+From
+Everyday Checking
+To
+High-Yield Savings
+Amount
+$10.00
+Date
+2026-10-14
+Memo
+Test transfer
+Cancel
+Confirm Transfer
+Close
+Transfer confirmed successfully.
+Transfer successful! Screenshot captured.
+[2026-10-14T10:33:31.830Z] Screenshot saved: confirm-transfer-success.png
+[2026-10-14T10:33:31.832Z] Transfered money successfully
+[2026-10-14T10:33:31.947Z] PASS: Transfer Money
+
+

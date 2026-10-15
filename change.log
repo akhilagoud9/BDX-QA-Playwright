@@ -1,0 +1,17 @@
+# Changelog
+
+## [1.1.0] - 2026-10-15
+
+### Changed
+- Refactored the original single-file Playwright test implementation into a modular, end-to-end automation framework using the Page Object Model (POM).
+- Separated page objects, test specifications, test data, utilities, and runner logic into dedicated directories.
+- Improved code reusability and maintainability through shared utilities and fixtures.
+- Organized Login, Dashboard, and Fund Transfer tests into separate specification files.
+- Integrated automated Allure report generation into the framework runner.
+- Integrated framework execution with GitHub Actions CI.
+
+## [1.0.0] - Initial Release
+
+### Added
+- Initial Playwright automation implementation with test code in a single file.
+- Initial browser automation and test execution.

@@ -1,15 +1,20 @@
 {
   "name": "playwrightautomation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:allure": "node runner/runner.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.6.4"
+    "@types/node": "^26.6.4",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.13.0"
   }
 }
