@@ -19,7 +19,7 @@ const config =({
   use: {
     baseURL: 'https://qaplayground.com',
     browserName: 'chromium',
-    headless: false,
+    headless: true,
     launchOptions: {
         slowMo: 1000
     },
